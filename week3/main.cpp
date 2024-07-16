@@ -40,6 +40,17 @@ void shift(int arr[], int n){
     }
     arr[0]=temp;
 }
+int countSetBit(int n){
+    int count=0;
+    while(n){
+        int bit=(n&1);
+        if(bit==1){
+            count++;
+        }
+        n>>=1;
+    }
+    return count;
+}
 
 int main() {
 
@@ -63,13 +74,16 @@ int main() {
 
 
 
-    int arr[]={10,20,30,40,50,60};
-    shift(arr,6);
-      // Printing the array
-    for (int i = 0; i < 6; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+    // int arr[]={10,20,30,40,50,60};
+    // shift(arr,6);
+    //   // Printing the array
+    // for (int i = 0; i < 6; i++) {
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+    int n=11;
+    cout << countSetBit(11);
+
 
     return 0;
 }
