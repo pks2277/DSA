@@ -1,12 +1,9 @@
 #include<iostream>
+#include<vector>
 using namespace std;
-
-int bS(int arr,int start,int end){
-    
-}
 
 int main()
 {
-    
+    vector<vector<int>> arr;
     return 0;
 }
