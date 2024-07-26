@@ -3,9 +3,7 @@ using namespace std;
 
 int factorial(int n) {
 	//base case
-	if(n == 1) 
-		return 1;
-	if(n == 0)
+	if(n == 1 || n == 0 )  
 		return 1;
 
 	//processing
@@ -25,9 +23,10 @@ void print(int n) {
 		return;
 	}
 	//processing
-	cout << n << " ";
+	// cout << n << " ";
 	//recursion call
 	print(n-1);
+	cout << n << " ";
 } 
 
 int pow(int n) {
@@ -46,10 +45,10 @@ int fib(int n) {
 		return 0;
 	if(n == 1) 
 		return 1;
-
 	int ans = fib(n-1) + fib(n-2);
 	return ans;
 } 
+
 int sum(int n ) {
 	//base case
 	if(n == 1)
@@ -59,11 +58,11 @@ int sum(int n ) {
 	return ans;
 }
 int main() {
-	cout << sum(5) << endl;
-	//cout << fib(7) << endl;
-	//cout << pow(10) << endl;
-  	//print(5);
-	//cout << factorial(5) << endl;
+	// cout << sum(5) << endl;
+	cout << fib(7) << endl;
+	// cout << pow(5) << endl;
+  	// print(5);
+	// cout << factorial(5) << endl;
 
 	return 0;
 }
