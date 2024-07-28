@@ -2,6 +2,16 @@
 #include<vector>
 using namespace std;
 
+bool isPalindrome(string&s,int start,int end){
+	if(start>=end){
+		return true;
+	}
+	if(s[start] != s[end]){
+		return false;
+	}
+	return isPalindrome(s,start+1,end-1);
+}
+
 bool checkSorted(int arr[], int size, int index) {
 	//base case
 	if(index >= size) {
