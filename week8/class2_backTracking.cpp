@@ -116,6 +116,16 @@ void printAllPath(int maze[][4], int row, int col, int srcx, int srcy, string &o
 
 int main() {
 
+
+
+	// string str = "abcd";
+	// int index = 0;
+	// printPermutation(str, index);
+
+
+
+
+
 	int maze[4][4] = {
 	{1,0,0,0},
 	{1,1,0,0},
@@ -141,18 +151,5 @@ int main() {
 		printAllPath(maze, row, col, srcx, srcy, output, visited);
 	}
 	
-	
-
-
-
-	
-
-	// string str = "abc";
-	// int index = 0;
-	// printPermutation(str, index);
-
-
-
-
 	return 0;
 }
